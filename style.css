@@ -125,10 +125,12 @@ nav ul {
     background-color: rgba(143, 20, 128, .8);
     color: #FFFFFF;
 }
-#nav_list li.active_sub{
+
+#nav_list li.active_sub {
     background-color: rgba(143, 20, 128, .8);
     color: #FFFFFF;
 }
+
 /* Navbar Submenu*/
 #nav_list li:hover ul.sub {
     display: block;
@@ -184,77 +186,6 @@ nav input {
     padding-right: 20px;
 }
 
-
-@media all and (max-width : 980px) {
-    nav input#toggle+label {
-        display: block;
-        width: 100%;
-        height: 87px;
-        background: url("media/images/icon/burger.png") center right no-repeat #fff;
-        position: absolute;
-        cursor: pointer;
-        z-index: 10;
-        text-align: right;
-    }
-
-    #nav_list {
-        display: none;
-        top: 100px;
-    }
-
-    input#toggle:checked~#nav_list {
-        display: block;
-    }
-
-
-    header img {
-        max-width: 150px !important;
-    }
-
-
-    #nav_list>li {
-        float: none;
-        border-bottom: 0;
-        margin-bottom: 0;
-    }
-
-    #nav_list ul.sub {
-        position: relative;
-        top: 0;
-    }
-
-    #nav_list li:hover ul.sub {
-        display: none;
-    }
-
-    #nav_list li #s1:target+ul.sub,
-    #nav_list li #s2:target+ul.sub {
-        display: block;
-    }
-
-    #nav_list ul.sub>li {
-        display: block;
-        width: auto;
-    }
-
-    .full_page .text_container h3 {
-        font-size: 2.5em !important;
-    }
-
-    .full_page .text_container {
-        padding: 10px !important;
-        width: 100% !important;
-    }
-
-    .full_page .text_container span {
-        font-size: 1.2em;
-    }
-
-    #up_btn_container {
-        left: 5px !important;
-        bottom: 5px !important;
-    }
-}
 
 /* -----------------------------------Hero -----------------------------------*/
 #hero_img {
@@ -322,17 +253,7 @@ nav input {
     opacity: 0;
 }
 
-.hidden {
-    visibility: hidden;
-    opacity: 0;
-    transition: visibility 0s 2s, opacity 2s linear;
-}
 
-.visible {
-    visibility: visible;
-    opacity: 1;
-    transition: opacity 2s linear;
-}
 
 .full_page .text_container:hover>span {
     opacity: 1;
@@ -384,9 +305,10 @@ nav input {
 }
 
 #up_btn_container:hover {
-    background-color: rgba(0,0,0,.05);
+    background-color: rgba(0, 0, 0, .05);
     border: 3px solid rgb(255, 255, 255);
 }
+
 /* -----------------------------------Footer -----------------------------------*/
 .footer_text {
     display: flex;
@@ -398,16 +320,19 @@ footer p {
     font-family: 'Roboto', sans-serif;
     padding: 20px;
 }
-.footer_nav_list{
+
+.footer_nav_list {
     text-align: center;
     margin-bottom: 25px;
 }
-.footer_nav_list li{
+
+.footer_nav_list li {
     display: inline;
     margin-left: 20px;
     margin-right: 20px;
 }
-.footer_nav_list li a{
+
+.footer_nav_list li a {
     text-decoration: none;
     color: #111;
     font-size: 1.3em;
@@ -415,9 +340,10 @@ footer p {
     padding: 0 15px;
     text-transform: uppercase;
 }
-.footer_nav_list li a:hover{
+
+.footer_nav_list li a:hover {
     border-bottom: 2px solid #8F1480;
-    background-color: rgba(0,0,0,.05);
+    background-color: rgba(0, 0, 0, .05);
     color: #555;
 }
 
@@ -448,7 +374,8 @@ img {
     padding: .5rem;
     text-transform: lowercase;
 }
-.btn a{
+
+.btn a {
     text-decoration: none;
     font-size: 1.3em;
     color: #111;
@@ -505,40 +432,133 @@ img {
 
 
 }
-.card_title{
+
+.card_title {
     color: #696969;
     font-weight: 300;
     letter-spacing: 2px;
     text-transform: uppercase;
 }
-.card_text{
+
+.card_text {
     flex: 1 1 auto;
     font-size: .875rem;
     line-height: 1.5;
     margin-bottom: 1.25rem;
 }
+
 .card_image::before {
     content: "";
     display: block;
     padding-top: 50%;
 
-    
+
 }
-.card_image_catering{
+
+.card_image_catering {
     background-image: url("media/images/fish_01.jpeg");
 }
-.card_image_kitchen{
+
+.card_image_kitchen {
     background-image: url("media/images/dessert_03.jpeg");
 }
+
 @media all and (max-width : 980px) {
     .cards {
         padding-top: 80px;
         width: 100%;
         flex-direction: column;
     }
-    .cards_item{
+
+    .cards_item {
         margin: 0 auto;
         width: 70%;
     }
+
+}
+
+/* 
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+
+@media (min-width: 320px) and (max-width: 480px) {
+
+    .text_container span {
+        opacity: 1;
+    }
+
+  
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  
+  #nav_list {
+        display: none;
+        top: 100px;
+    }
+     input#toggle:checked~#nav_list {
+        display: block;
+    }  
+    nav input#toggle+label {
+        display: block;
+        width: 100%;
+        height: 87px;
+        background: url("media/images/icon/burger.png") center right no-repeat #fff;
+        position: absolute;
+        cursor: pointer;
+        z-index: 10;
+        text-align: right;
+    }
+
     
+   
+
+
+    header img {
+        max-width: 150px !important;
+    }
+
+
+    #nav_list>li {
+        float: none;
+        border-bottom: 0;
+        margin-bottom: 0;
+    }
+
+    #nav_list ul.sub {
+        position: relative;
+        top: 0;
+    }
+
+    #nav_list li:hover ul.sub {
+        display: none;
+    }
+
+    #nav_list li #s1:target+ul.sub,
+    #nav_list li #s2:target+ul.sub {
+        display: block;
+    }
+
+    #nav_list ul.sub>li {
+        display: block;
+        width: auto;
+    }
+
+    .full_page .text_container h3 {
+        font-size: 2.5em !important;
+    }
+
+    .full_page .text_container {
+        padding: 10px !important;
+        width: 100% !important;
+    }
+
+    .full_page .text_container span {
+        font-size: 1.2em;
+    }
+
+    #up_btn_container {
+        left: 5px !important;
+        bottom: 5px !important;
+    }
 }
