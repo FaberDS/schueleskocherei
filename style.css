@@ -561,4 +561,8 @@ img {
         left: 5px !important;
         bottom: 5px !important;
     }
+     #up_btn_container {
+        display: none ;
+    }
+  
 }
