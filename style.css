@@ -311,7 +311,7 @@ nav input {
     opacity: .5;
     border: 3px solid rgb(255, 255, 255);
 }
- #up_btn_container_footer {
+ #up_btn_container_footer,  #up_btn_container_footer a {
         opacity: 0;
         display: none;
     }
@@ -569,7 +569,7 @@ img {
          display: none;
         opacity: 0;
     }
-     #up_btn_container_footer {
+     #up_btn_container_footer ,  #up_btn_container_footer a{
          display: inline;
         opacity: 1;
     }
