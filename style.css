@@ -219,6 +219,9 @@ nav input {
     opacity: 0.9;
 }
 
+#main_content .full_page:hover h3{
+    font-size: 5.5em;
+}
 .full_page .text_container {
     width: 40%;
     height: 40%;
@@ -240,6 +243,7 @@ nav input {
     margin-bottom: 20px;
     text-transform: uppercase;
     padding-bottom: 35px;
+    transition: font-size 1000ms; 
     border-bottom: 1px solid rgba(255, 255, 255, 0.5);
 }
 
@@ -563,6 +567,9 @@ img {
 
     .full_page .text_container span {
         font-size: 1.2em;
+    }
+    .footer_nav li{
+        display: block;
     }
 
      .up_btn_container {
