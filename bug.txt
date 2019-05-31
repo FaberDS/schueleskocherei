@@ -1,5 +1,0 @@
-ios up btn
-    ios btn ist oben und Container hängt am boden
-
-ios focus 
-    box of the up_btn is to small
