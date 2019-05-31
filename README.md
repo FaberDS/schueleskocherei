@@ -21,3 +21,7 @@
 ### Links
 - [Screenreader experience report](https://silktide.com/blog/2013/things-i-learned-by-pretending-to-be-blind-for-a-week)
 - [Correct usage of `role`](https://www.w3.org/TR/html-aria/)
+- [CSS Prefix] (https://bitsofco.de/css-vendor-prefixes/)
+
+### Unterlagen
+- [Impressum Broschüre WKO](https://www.wko.at/service/wirtschaftsrecht-gewerberecht/Das-korrekte-E-Mail-Impressum.pdf)

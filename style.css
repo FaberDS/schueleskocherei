@@ -153,8 +153,8 @@ img {
     #nav_list>li>a {
         color: #111;
         display: block;
-        font-size: .7em;
-        line-height: 25px;
+        font-size: .9em;
+        line-height: 30px;
         padding: 0 15px;
         text-transform: uppercase;
     }
@@ -199,8 +199,7 @@ img {
     }
 
     #nav_list ul.sub>li>a {
-        font-size: .7em;
-        /*margin-bottom: 10px;*/
+        font-size: .8em;
         text-transform: uppercase;
     }
 
@@ -214,9 +213,10 @@ img {
         transition: padding 150ms ease-out 0s;
     }
 
-    #nav_list ul.sub>li:hover,
-    #nav_list ul.sub>li:focus {
+    #nav_list ul.sub>li:hover a,
+    #nav_list ul.sub>li:focus a{
         padding-left: 10px;
+        color: #8F1480;
     }
 
     nav label,
@@ -289,24 +289,30 @@ img {
         align-items: center;
     }
 
-    .full_page .text_container {
+      .text_container {
         width: 40%;
         height: 40%;
         padding: 50px;
         display: flex;
         flex-direction: column;
         justify-content: center;
+        border: 2px solid rgba(0,0,0,.0);
+        text-align: center;
+        -webkit-transition: background-color 0.8s ease-in, border 1s ease-in;
+        -moz-transition:  background-color 0.8s ease-in, border 1s ease-in;
+        -o-transition: background-color 0.8s ease-in, border 1s ease-in;
+        transition:  background-color 0.8s ease-in, border 1s ease-in;
+        
     }
+ 
 
-    .full_page_txt {
+    .full_page_txt, 
+    h3.full_page_headline {
         font-family: 'Roboto', sans-serif;
         color: white;
     }
     h3.full_page_headline{
-        font-size: 2em;
-    }
-
-    .full_page .text_container h3 {
+        font-variant: small-caps;
         font-weight: lighter;
         text-align: center;
         font-size: 2.6em;
@@ -315,21 +321,25 @@ img {
         padding-bottom: 35px;
         transition: font-size 1000ms; 
         border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+        
     }
 
-    .text_container span {
+    .full_page_txt {
         text-align: center;
-        font-size: 1em;
-        color: #eee;
+        font-size: 1.2em;
         font-family: "Josefin Sans", sans-serif;
-        text-shadow: 0 2px 2px rgba(1, 1, 1, 0.15);
         transition: opacity 1300ms;
         opacity: 0;
     }
 
-    .full_page .text_container:hover>span,
-    .full_page .text_container:focus>span {
+    .text_container:focus>.full_page_txt,
+    .text_container:hover>.full_page_txt {
         opacity: 1;
+    }
+    .text_container:focus,
+    .text_container:hover{
+        background-color: rgba(0,0,0,.3);
+        border: 2px solid rgba(0,0,0,.5);
     }
 
     .full_page {
@@ -344,6 +354,7 @@ img {
 /* -----------------------------------Up-Button-----------------------------------*/
     .up_btn_container {
         position: sticky;
+        position: -webkit-sticky;
         bottom: 20px;
         left: 20px;
         width: 30px;
@@ -485,17 +496,17 @@ img {
     }
 
 /* -----------------------------------Index Page Content -----------------------------------*/
-    .main_content .full_page {
+    main .full_page {
         opacity: 0.7;
     }
 
-    .main_content .full_page:hover,
-    .main_content .full_page:focus {
+    main .full_page:hover,
+    main .full_page:focus {
         opacity: 0.9;
     }
 
-    .main_content .full_page:hover h3,
-    .main_content .full_page:focus h3{
+    main .full_page:hover h3,
+    main .full_page:focus h3{
         font-size: 3.2em;
     }
 
@@ -522,7 +533,6 @@ img {
     #full_page_cooking_01 {
         background-color: #f0f0f0;
         height: 100%;
-        padding: 20px;
     }
 
     .card_image_catering {
@@ -617,13 +627,13 @@ img {
         margin-right: 20px;
         float: left;
     }
-    article p{
+    .catering_content article p{
         font-size: 1em;
         line-height: 2em;
         color: #333;
         font-weight: 100;
     }
-    article p::first-letter{
+     .catering_content article p::first-letter{
         font-size: 2.5em;
         color: #111;
         font-weight: 600;
@@ -723,18 +733,38 @@ img {
         text-align: right;
     }
 
-    /* 
-    ###################################################################
+/* 
+###################################################################
 
-    -----------------------------------Kitchen ---------------------------
+-----------------------------------Kitchen ---------------------------
 
-    ###################################################################
-    */
+###################################################################
+*/
     #full_page_kitchen{
         background-color: #8f1443;
         background: url("media/images/background/party.jpeg");
         background-size: cover;
         flex-direction: column;
+    }
+
+/* 
+###################################################################
+
+-----------------------------------Impressum ---------------------------
+
+###################################################################
+*/
+    #impressum_content{
+        padding-top: 30px;
+       text-align: center;
+        border-bottom: 1px solid black;
+        padding-bottom: 25px;
+            position: relative;
+    top: 30px;
+
+    }
+    #impressum_content article h4{
+        margin-bottom: 15px;
     }
 
 /*
