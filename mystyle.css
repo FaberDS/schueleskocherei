@@ -274,7 +274,7 @@ img {
         -webkit-transition: color 450ms ease-in-out 0s, background-color 450ms ease-in-out 0s, border 450ms ease-in-out 0s;
         transition: color 450ms ease-in-out 0s, background-color 450ms ease-in-out 0s, border 450ms ease-in-out 0s;
     }
-    
+ 
     .footer_box a:hover,
     .footer_box a:focus{
         background-color:  #8F1480;
