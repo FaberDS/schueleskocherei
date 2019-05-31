@@ -21,10 +21,9 @@ h5,
 h6 {
     font-weight: bold;
     font-family: Verdana, sans-serif;
+    text-shadow: 1px 0px 1px rgba(150, 150, 150, 0.81);
 }
-h1, h2,h3,h4,h5,h6{
-text-shadow: 1px 0px 1px rgba(150, 150, 150, 0.81);
-}
+
 p {
     font-family: Georgia, serif;
 }
