@@ -768,13 +768,15 @@ img {
         margin-bottom: 30px;
             position: relative;
     top: 30px;
-
     }
-    #impressum_content article h4{
+    #impressum_content section{
+        margin-top: 25px;
+    }
+    article#impressum_content  h4{
         margin-bottom: 15px;
     }
 
-    #validation img{
+    .validation img{
         max-width: 150px;
     }
 /*
