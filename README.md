@@ -86,3 +86,4 @@
 
 ### Unterlagen
 - [Impressum Broschüre WKO](https://www.wko.at/service/wirtschaftsrecht-gewerberecht/Das-korrekte-E-Mail-Impressum.pdf)
+- [Accesibility Checkliste](https://www.access-for-all.ch/images/AccessibilityChecklisteRedakteure/Accessibility_Checkliste_fuer_Redaktoren.pdf)

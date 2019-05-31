@@ -312,11 +312,11 @@ img {
  
 
     .full_page_txt, 
-    h3.full_page_headline {
+    h2.full_page_headline {
         font-family: 'Roboto', sans-serif;
         color: white;
     }
-    h3.full_page_headline{
+    h2.full_page_headline{
         font-variant: small-caps;
         font-weight: lighter;
         text-align: center;
@@ -461,8 +461,8 @@ img {
         position: relative;
         transition: filter 0.5s cubic-bezier(.43, .41, .22, .91);
     }
-    .card_title {
-        color: #696969;
+    .card_title h4 {
+        color: #222121;
         font-weight: 300;
         letter-spacing: 1.5px;
         text-transform: uppercase;
@@ -510,8 +510,8 @@ img {
         opacity: 0.9;
     }
 
-    main .full_page:hover h3,
-    main .full_page:focus h3{
+    main .full_page:hover h2,
+    main .full_page:focus h2{
         font-size: 3.2em;
     }
 
@@ -600,7 +600,7 @@ img {
 
         border-bottom: 1px solid white;
     }
-    h4.headline{
+    h3.headline{
         font-size: 1.5em;
     }
     .catering_content .btn{
@@ -853,7 +853,7 @@ img {
         width: auto;
     }
 
-    .full_page .text_container h3 {
+    .full_page .text_container h2 {
         font-size: 1.7em !important;
     }
 
@@ -896,7 +896,7 @@ img {
         margin-top: 15px;
     }
 
-    #full_page_life h3{
+    #full_page_life h2{
         font-size: 2em !important;
     }
     .full_page blockquote{
