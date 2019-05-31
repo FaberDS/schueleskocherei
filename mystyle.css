@@ -461,11 +461,12 @@ img {
         position: relative;
         transition: filter 0.5s cubic-bezier(.43, .41, .22, .91);
     }
-    .card_title h4 {
+    .card_title h2 {
         color: #222121;
         font-weight: 300;
         letter-spacing: 1.5px;
         text-transform: uppercase;
+        font-size: 1em;
     }
 
     .card_text {
@@ -478,7 +479,7 @@ img {
     .card_image::before {
         content: "";
         display: block;
-        padding-top: 50%;
+        padding-top: 60%;
 
 
     }
@@ -510,8 +511,8 @@ img {
         opacity: 0.9;
     }
 
-    main .full_page:hover h2,
-    main .full_page:focus h2{
+    main .full_page:hover .full_page_headline,
+    main .full_page:focus .full_page_headline{
         font-size: 3.2em;
     }
 
@@ -537,7 +538,7 @@ img {
 
     #full_page_cooking_01 {
         background-color: #f0f0f0;
-        height: 72vh;
+        height: 100%;
     }
 
     .card_image_catering {
@@ -765,16 +766,17 @@ img {
         border-bottom: 1px solid black;
         padding-bottom: 25px;
         margin-bottom: 30px;
-            position: relative;
-    top: 30px;
+        position: relative;
+        top: 30px;
 
     }
     #impressum_content article h4{
         margin-bottom: 15px;
     }
-
+    
     #validation img{
         max-width: 150px;
+        
     }
 /*
 ###################################################################
@@ -821,7 +823,7 @@ img {
         top: 0px;
         width: 25px;
         height: 25px;
-        background: url("media/images/icon/burger2.png") center center no-repeat ;
+        background: url("media/images/icon/burger.png") center center no-repeat ;
         background-size: contain;
         cursor: pointer;
         z-index: 10000;
@@ -852,18 +854,30 @@ img {
         display: block;
         width: auto;
     }
-
+  
+    main .full_page {
+        opacity: 0.9;
+    }
     .full_page .text_container h2 {
         font-size: 1.7em !important;
     }
 
     .full_page .text_container {
         padding: 10px !important;
-        width: 100% !important;
+        width: 80% !important;
     }
 
     .full_page .text_container span {
         font-size: .9em;
+    }
+
+    .text_container .full_page_txt {
+        opacity: 1;
+    }
+    
+    .text_container{
+        background-color: rgba(0,0,0,.3);
+        border: 2px solid rgba(0,0,0,.5);
     }
   
   
@@ -909,16 +923,22 @@ img {
         #adrian_quote{
             font-size: 1.2em;
         }
+
+}
+@media (min-width: 200px) and (max-width: 590px) {
 /*--------------------cards----------------------------------*/
     .cards {
-        padding-top: 80px;
         width: 100%;
         flex-direction: column;
+        justify-content: center;
+        overflow: auto;
     }
-
+    .card{
+        max-width: 350px;
+    }
     .cards_item {
-        margin: 0 auto;
         width: 70%;
+        margin: 0 auto;
     }
      .card_title{
         font-size: .9em;
@@ -927,4 +947,3 @@ img {
         font-size: .65em;
     }
 }
-
