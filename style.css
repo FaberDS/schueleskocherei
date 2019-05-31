@@ -31,6 +31,8 @@ p {
 
 a {
     font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+
 }
 
 hr {
@@ -470,7 +472,7 @@ img {
         background-color: #529759;
         background: url("media/images/hero_img.jpeg") no-repeat center center fixed;
         background-size: cover;
-        min-height: 450px;
+        min-height: 100px;
 
     }
 
@@ -547,9 +549,11 @@ img {
         padding-top:8px;
         text-align: center;
         font-size: 1.2em;
-        color:#666;
+        color:#8e1d7f;
         border-top: 1px solid #666;
         border-bottom: 1px solid #666;
+        margin-top: 20px;
+        letter-spacing: 1.5em;
     }
     .headline
     {
@@ -585,6 +589,17 @@ img {
         border: 1px solid white;
     }
     
+    #adrian_quote{
+        /*background-color: rgba(165,97,134,.6);*/
+        line-height: 2em;
+        margin-top: 30px;
+        font-size: 1.5em;
+    }
+    #adrian_quote blockquote{
+        word-spacing: .5em;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+   
 /* -----------------------------------Article -----------------------------------*/
     article{
         padding: 20px;
@@ -606,11 +621,11 @@ img {
         font-weight: 600;
     }
         
-/* -----------------------------------Table -----------------------------------*/
+/* -----------------------------------Sidebar -----------------------------------*/
     .catering_content th,
     .catering_content td{
         text-align: left;
-        font-size: .8em;
+        font-size: 1em;
         color: #222;
         padding-left: 10px;
 
@@ -626,12 +641,38 @@ img {
         padding: 20px;
         width: 100%;
         border-collapse: collapse;
+        margin-top: 40px;
     }
     table.details_table tr{
             border-bottom: 1px solid #222;
             line-height: 2.5em;
             
 
+    }
+    .sidebar article ul{
+        list-style: none;
+    }
+    .sidebar article a{
+        color: #4c0b44;
+        display: block;
+        margin-left: 20px;
+        padding: 5px;
+        border: 1px solid rgba(255,255,255,0);
+        
+        -webkit-transition: padding 0.2s ease-in;
+        -moz-transition: padding 0.2s ease-in;
+        -o-transition: padding 0.2s ease-in;
+        transition: padding 0.2s ease-in;
+    }
+     .sidebar article a:hover,
+     .sidebar article a:focus
+     {
+        color: white;
+        border: 1px solid white;
+        padding-left: 15px;
+    }
+    .sidebar article p::first-letter{
+        font-size: 1.5em;
     }
 /* -----------------------------------Iframe -----------------------------------*/
 
@@ -722,7 +763,6 @@ img {
         display: none;
         top: -25px;
     }
- 
      input#toggle:checked~#nav_list {
         display: block;
     }  
@@ -734,7 +774,7 @@ img {
         top: 0px;
         width: 25px;
         height: 25px;
-        background: url("media/images/icon/burger2.png") center center no-repeat rgb(255,255,255);
+        background: url("media/images/icon/burger2.png") center center no-repeat ;
         background-size: contain;
         cursor: pointer;
         z-index: 10000;
@@ -810,8 +850,11 @@ img {
         
     }
     .btn a{
-        font-size: .8em !important;
+        font-size: 1.2em !important;
     }
+        #adrian_quote{
+            font-size: 1.2em;
+        }
 /*--------------------cards----------------------------------*/
     .cards {
         padding-top: 80px;
