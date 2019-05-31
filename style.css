@@ -584,17 +584,26 @@ img {
         line-height: 50px;
         border: 1px solid white;
     }
+    
 /* -----------------------------------Article -----------------------------------*/
     article{
         padding: 20px;
     }
     article img{
-        max-width: 20%;
+        max-width: 30%;
         margin-right: 20px;
         float: left;
     }
     article p{
-        font-size: .8em;
+        font-size: 1em;
+        line-height: 2em;
+        color: #333;
+        font-weight: 100;
+    }
+    article p::first-letter{
+        font-size: 2.5em;
+        color: #111;
+        font-weight: 600;
     }
         
 /* -----------------------------------Table -----------------------------------*/
