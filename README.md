@@ -19,9 +19,6 @@
     </tr>
 </table>
 
-### Validation Websites
-- [CSS Validation](http://jigsaw.w3.org/css-validator/)
-- [HTML Validation](https://validator.w3.org//)
 ### Links
 - [Screenreader experience report](https://silktide.com/blog/2013/things-i-learned-by-pretending-to-be-blind-for-a-week)
 - [Correct usage of `role`](https://www.w3.org/TR/html-aria/)
