@@ -21,7 +21,7 @@ h5,
 h6 {
     font-weight: bold;
     font-family: Verdana, sans-serif;
-    text-shadow: 1px 0px 1px rgba(150, 150, 150, 0.81);
+    
 }
 
 p {
@@ -87,6 +87,7 @@ img {
         color: white;
     }
 /* -----------------------------------Navbar-----------------------------------*/
+    
     nav {
         margin-left: auto;
         margin-right: auto;
@@ -282,6 +283,10 @@ img {
     }
 
 /* -----------------------------------Full-Page Styling-----------------------------------*/
+    .page_headline{
+        text-align: center;
+        
+    }
     .full_page {
         display: flex;
         justify-content: center;
@@ -312,13 +317,15 @@ img {
  
 
     .full_page_txt, 
-    h2.full_page_headline {
+    h2.full_page_headline,
+    h1.full_page_headline {
         font-family: 'Roboto', sans-serif;
         color: white;
     }
-    h2.full_page_headline{
+    h2.full_page_headline,
+    h1.full_page_headline
+    {
         font-variant: small-caps;
-        font-weight: lighter;
         text-align: center;
         font-size: 2.6em;
         margin-bottom: 20px;
@@ -343,8 +350,8 @@ img {
     }
     .text_container:focus,
     .text_container:hover{
-        background-color: rgba(0,0,0,.3);
-        border: 2px solid rgba(0,0,0,.5);
+        background-color: rgba(143,20,128,.6);
+        border: 2px solid rgba(20,20,20,.8);
     }
 
     .full_page {
@@ -457,9 +464,8 @@ img {
         background-repeat: no-repeat;
         background-size: cover;
         overflow: hidden;
-        filter: contrast(70%);
         position: relative;
-        transition: filter 0.5s cubic-bezier(.43, .41, .22, .91);
+        
     }
     .card_title h2 {
         color: #222121;
@@ -480,8 +486,6 @@ img {
         content: "";
         display: block;
         padding-top: 60%;
-
-
     }
 
 /* 
@@ -535,9 +539,10 @@ img {
 
 ###################################################################
 */
-
+    .page_title_cooking{
+        background-color: #f4f4f4;
+    }
     #full_page_cooking_01 {
-        background-color: #f0f0f0;
         height: 100%;
     }
 
@@ -557,7 +562,7 @@ img {
 
 ###################################################################
 */
-    .catering_main{
+    .cutingboard_background{
         background-color: rgb(165,97,134);
         background: url("media/images/background/cuting_01.jpeg") no-repeat center center fixed;
         background-size: cover;
@@ -589,7 +594,6 @@ img {
     
     h1.headline{
         background-color: rgba(165,97,134,.3);
-        color: #8e1d7f;
         font-size:2em;
     }
     h1.headline,
@@ -598,7 +602,6 @@ img {
     }
     h2.headline{
         font-size:2em;     
-
         border-bottom: 1px solid white;
     }
     h3.headline{
@@ -854,7 +857,9 @@ img {
         display: block;
         width: auto;
     }
-  
+    .page_headline{
+        font-size: .7em;
+    }
     main .full_page {
         opacity: 0.9;
     }
