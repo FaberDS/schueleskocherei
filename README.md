@@ -83,6 +83,7 @@
 - [CSS Prefix](https://bitsofco.de/css-vendor-prefixes/)
 - [CSS Selektoren](https://www.w3schools.com/css/css_combinators.asp)
 - [CSS Flexbox](https://www.w3schools.com/css/css3_flexbox.asp)
+- [Web AIM](https://webaim.org/standards/wcag/checklist)
 
 ### Unterlagen
 - [Impressum Broschüre WKO](https://www.wko.at/service/wirtschaftsrecht-gewerberecht/Das-korrekte-E-Mail-Impressum.pdf)

@@ -373,6 +373,9 @@ img {
         height: 30px;
         z-index: 1000;
     }
+    .up_btn_container p{
+        display: none;
+    }
     .up_btn_container_footer {
             display: none ;
         }
@@ -487,6 +490,10 @@ img {
         display: block;
         padding-top: 60%;
     }
+    .card_image p{
+        visibility: hidden;/*Opera mini does not suport*/
+        opacity: 0;
+    }
 
 /* 
 ###################################################################
@@ -569,6 +576,7 @@ img {
         width: 100%;
         overflow: hidden;
     }
+    
      .catering_content .col{
         background-color: rgba(165,97,134,.3);
     }
@@ -777,7 +785,7 @@ img {
         margin-bottom: 15px;
     }
     
-    #validation img{
+    .validation img{
         max-width: 150px;
         
     }
@@ -818,7 +826,9 @@ img {
      input#toggle:checked~#nav_list {
         display: block;
     }  
-    
+    label.button p{
+        display: none;
+    }
     nav input#toggle+label {
         display: inline-block;
         float: right;
@@ -899,6 +909,7 @@ img {
          display: none;
         opacity: 0;
     }
+
    
     .col_container{
         flex-direction: column;
